@@ -30,7 +30,8 @@ public class MobilePhone {
 
     public boolean addContact(Contact contact) {
         String name = contact.getName();
-        if (findContact(name) < 0) {
+        System.out.println("Prining Name: " + name);
+        if (findContact(name) < 0) { //OVDE JE PROBLEM OKO USLOVA
             contactList.add(contact);
             return true;
         } else {
